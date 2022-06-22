@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Article preview component</title>
+    <!--FAV ICON-->
+    <link rel="icon" href="./assets/images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap">
+    <!--ANIMATE.CSS-->
+    <link rel="stylesheet" href="./libs/animate.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+
+  <body>
+
+    <header>
+      <!--TITLE OF THE PAGE-->
+      <h1>Article preview component of Michelle Appleton</h1>
+    </header>
+
+    <main>
+      <!--CARD-->
+      <article class="card">
+
+        <div class="grid grid-rows-[20rem_1fr] md:grid-cols-[28.5rem_1fr] md:grid-rows-[28rem]">
+
+          <div class="md:rounded-l-2xl md:overflow-hidden">
+            <img src="./assets/images/drawers.jpg" alt="" class="object-cover">
+          </div>
+          
+          <div class="px-[3.2rem] pt-[3.6rem] pb-[2rem] md:px-[4rem] md:py-[3.2rem] relative">
+
+            <h2>
+              Shift the overall look and feel by adding these wonderful 
+              touches to furniture in your home
+            </h2>
+
+            <p class="mb-[3.2rem] md:mb-[2rem]">
+              Ever been in a room and felt like something was missing? Perhaps 
+              it felt slightly bare and uninviting. I’ve got some simple tips 
+              to help you make any room feel complete.
+            </p>
+
+            <footer class="grid grid-cols-[4rem_1fr_4rem]">
+              <img src="./assets/images/avatar-michelle.jpg" alt="Michelle Appleton" class="rounded-full">
+              <p class="text-dark font-bold ml-[1.6rem]">
+                Michelle Appleton
+                <span class="block">28 Jun 2020</span>
+              </p>
+              <div id="share-btn" tabIndex= "0" role="menu" aria-label="Share">
+                <span class="fa-stack fa-2x group cursor-pointer">
+                  <i class="fa-solid fa-circle fa-stack-2x text-extra-light group-hover:text-medium"></i>
+                  <i class="fa-solid fa-share fa-stack-1x fa-inverse text-medium group-hover:text-white"></i>
+                </span>
+              </div>
+            </footer>
+
+            <!--TOOLTIP-->
+            <div id="tooltip" class="tooltip hidden">
+              <span class="mr-[2.1rem] tracking-widest">SHARE</span>
+              <ul class="grid grid-cols-4 gap-[1.6rem]">
+                <li>
+                  <a href="#" class="" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-square text-xl text-white hover:text-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Twitter">
+                    <i class="fa-brands fa-twitter text-xl text-white hover:text-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest text-xl text-white hover:text-pinterest"></i>
+                  </a>
+                </li>
+                <li>
+                  <div id="close-btn" tabIndex= "0" role="button" aria-label="Close">
+                    <span class="fa-stack fa-[3.2rem] group cursor-pointer">
+                      <i class="fa-solid fa-circle fa-stack-2x text-medium group-hover:text-closeBtn"></i>
+                      <i class="fa-solid fa-xmark fa-stack-1x fa-inverse text-extra-light group-hover:text-white"></i>
+                    </span>
+                  </div>
+                </li>
+              </ul>              
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </main>
+
+    <!--FONT AWESOME-->
+    <script defer src="./assets/fontawesome/all.min.js"></script>
+    <!--JAVASCRIPT-->
+    <script src="./js/script.js" type="module"></script>
+
+  </body>
+
+</html>
